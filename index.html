@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC Weather</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-light bg-primary" id="nav">
+        <a href="index.html"><i class="fas fa-cloud-sun"></i>  Weather Dashboard  <i class="fas fa-cloud-sun"></i></a>
+    </nav>
+
+    <!-- Container -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row" id="row1">
+                    Search for a City:
+                </div>
+                <div class="row">
+                    <form class="form-inline my-2 my-sm-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search for a City!" aria-label="Search" id="searchInput">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-cloud-sun"></i></button>
+                    </form>
+                <div class="row" id="lastSearch">
+                    <div class="card" style="width: 18rem;" id="buttonsList">
+                        <!-- Buttons of last search goes here -->
+                    </div>
+                </div>
+    
+                </div>
+            </div>
+
+            <!-- Weather Card -->
+
+            <div class="col-lg-8" id="allWeather">
+                <div class="row" id="weatherCard">
+                    <div class="card" style="width: 98%;" id="cardDisplay">
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="card-body" id="card">
+                                  <h2 class="card-title" id="cityResult"></h2>
+                                  <p class="card-text" id="tempResult"></p>
+                                  <p class="card-text" id="humidityResult"></p>
+                                  <p class="card-text" id="windResult"></p>
+                                  <p class="card-tet" id="UVIndexResult"></p>
+                                </div>
+    
+                            </div>
+                            <div class="col-lg-4" id="mainIcon">
+                                <!-- Main Icon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 Day Forecast -->
+                <div class="row" id="row5day"></div>
+
+                <div class="row" id="rowCards">
+                    <!-- Cards Goes Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+
+     <footer>
+        <div class="col-12">
+            <hr class="light" color="gray">
+            <h5 id="CopyR">&copy; JaviiStacks WeatherApp</h5>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

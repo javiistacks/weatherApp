@@ -1,0 +1,60 @@
+a {
+    color: white !important;
+    font-size: 30px;
+    text-decoration: none !important;
+}
+
+#nav {
+    padding: 10px;
+    justify-content: center;
+}
+
+#row1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.form-inline {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#lastSearch {
+    padding-left: 35px;
+    
+}
+
+#weatherCard {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#row5day {
+    padding-bottom: 20px;
+}
+
+#rowCards {
+    justify-content: center;
+}
+
+#cardDisplay {
+    display: none;
+}
+
+#buttonsList {
+    /* display: none; */
+}
+
+.container-fluid {
+    padding-bottom: 70px;
+}
+
+/* .col-sm-4 {
+    background-color: #e6f2ff;
+} */
+
+footer {
+    text-align: center;
+    clear: both;
+}

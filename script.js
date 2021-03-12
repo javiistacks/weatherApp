@@ -157,7 +157,7 @@ function lastSearch () {
 $(".btn").on("click", function (event){
     event.preventDefault();
     if ($("#searchInput").val() === "") {
-    alert("Please type a userInput to know the current weather");
+    alert("Please type a name of a city to know the current weather");
     } else
     var userInput = $("#searchInput").val().trim().toLowerCase();
     currentWeather(userInput);

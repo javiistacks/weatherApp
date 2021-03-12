@@ -1,0 +1,228 @@
+:root {
+    background-color: #ecf5ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /************************/
+  /*        Global        */
+  /************************/
+  
+  body {
+    background-color: #ecf5ff;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+  }
+  
+  form {
+    padding-top: 0.25rem;
+  }
+  
+  h1 {
+    background-color: #172da7;
+    color: #ecf5ff;
+    margin-bottom: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+    text-shadow: -0.0625rem 0 #2b213b, 0 0.125rem #333, 0.0625rem 0 #333, 0 -0.0625rem #333;
+    -webkit-border-radius: 0.3rem;
+  }
+  
+  h2 {
+    margin: 0 0 0 0.5rem;
+  }
+  
+  h5 {
+    font-size: .875rem;
+  }
+  
+  hr {
+    padding-bottom: 0;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin: 0 0 1rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  span {
+    padding: 0.25rem;
+    color: white;
+    -webkit-border-radius: 0.25rem;
+  }
+  
+  /************************/
+  /*        Classes       */
+  /************************/
+  
+  .btn {
+    background-color: rgb(134, 196, 158);
+    margin-bottom: 0.1875rem;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: rgb(212, 166, 174);
+    -webkit-border-radius: 0.5rem;
+  }
+  
+  .card-body {
+    display: inline-block;
+    padding: 0.25rem;
+    text-align: left;
+  }
+  
+  .card-date {
+    font-weight: 700;
+  }
+  
+  .card-deck {
+    width: 100%;
+  }
+  
+  .card-icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text {
+    font-size: 0.93rem;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .col {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .sideNav {
+    background-color: #d3d3d3;
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    -webkit-border-radius: 0.3rem;
+  }
+  
+  /************************/
+  /*        Colors        */
+  /************************/
+  
+  #green {
+    background-color: green;
+  }
+  
+  #yellow {
+    background-color: yellow;
+    color: #333;
+  }
+  
+  #orange {
+    background-color: orange;
+  }
+  
+  #red {
+    background-color: red;
+  }
+  
+  #purple {
+    background-color: purple;
+  }
+  
+  /************************/
+  /*       Classes        */
+  /************************/
+  
+  #addCity {
+    background-color: #ecf5ff;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #cityBtn {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0.0625rem 0;
+    padding: 0.0625rem;
+  }
+  
+  #main {
+    width: 75%;
+  }
+  
+  #searchBtn {
+    justify-content: center;
+    margin: 0.125rem 0;
+    padding: 0.1875rem;
+    width: 100%;
+  }
+  
+  #todayIcon {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  
+  #today {
+    display: block;
+    margin-top: 0.25rem;
+  }
+  
+  #ul-view {
+    list-style-type: none;
+    text-align: left;
+  }
+  
+  /************************/
+  /*       Buttons        */
+  /************************/
+  
+  #searchBtn {
+    background: linear-gradient(to left, #2b213b, #ec3e12, #a89191, #2285f7, rgb(241, 43, 76), rgb(67, 219, 62));
+    border: 0.125rem solid #2b213b;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.125rem 0;
+    padding: 0.1875rem;
+    text-shadow: 0 0 0.5rem #333;
+    width: 100%;
+    -webkit-text-stroke-color: indigo;
+    -webkit-text-stroke-width: 0.0625rem;
+  }
+  
+  #searchBtn:hover {
+    cursor: pointer;
+    color: #ecf5ff;
+    box-shadow: 0 0.5rem 0.5rem 0 #2b213b;
+    transform: translateY(0.1rem);
+    transition: transform 150ms;
+  }
+  
+  #searchBtn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
+  /************************/
+  /*        @Media        */
+  /************************/
+  
+  @media screen and (max-width: 800px) {
+    #main {
+      width: 100%;
+    }
+  }

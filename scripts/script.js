@@ -155,17 +155,5 @@ $(document).ready(function() {
       weatherToday(city);
       forecastDeck(city);
     })
-
-    $(".btn").on("click", function (event){
-      event.preventDefault();
-      if ($("#searchInput").val() === "") {
-      alert("Please type a userInput to know the current weather");
-      } else
-      var userInput = $("#searchInput").val().trim().toLowerCase();
-      currentWeather(userInput);
-      forecast(userInput);
-      storeData();
-      lastSearch();
-      $("#searchInput").val("");
     
     });

@@ -152,8 +152,15 @@ $(document).ready(function() {
       event.preventDefault();
       city = $(this).text().trim();
       alert("Clicked city button");
+      console.log(city)
       weatherToday(city);
       forecastDeck(city);
     })
-    
-    });
+  });
+
+// for clearing city list
+$("#clearBtn").on("click", function(event){
+localStorage.clear();
+location.reload();  
+
+});

@@ -155,7 +155,7 @@ $(document).ready(function() {
       event.preventDefault();
       city = $(this).text().trim();
       alert("Clicked city button");
-      console.log(city)
+      console.log(city);
       weatherToday(city);
       forecastDeck(city);
     })

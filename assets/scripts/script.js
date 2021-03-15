@@ -146,7 +146,7 @@ $(document).ready(function() {
         alert("Please type the name of the City to know the current weather");
         // return;
       }
-      console.log(city)
+      console.log(city);
       weatherData(city);
     });
     

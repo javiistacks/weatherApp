@@ -58,6 +58,7 @@ $(document).ready(function() {
         method: "GET",
       }).then(function (response) {
         var name = response.name;
+        var country = response.sys.country;
         var date = moment.unix(response.dt).format("MM/DD/YYYY");
         var icon = response.weather[0].icon;
         var iconURL = "https://openweathermap.org/img/w/" + icon + ".png";
@@ -71,8 +72,8 @@ $(document).ready(function() {
         getUvIndex(lat, lon);
     
         $("#today").append(
-        `<div id="today" class="row">
-          <h2 id="name">${name} (${date}) <img id="todayIcon" src=${iconURL}></h2>
+       `<div id="today" class="row">
+         <h2 id="name">${name},${country}  (${date}) <img id="todayIcon" src=${iconURL}></h2>
           <p id="temp">Temperature: ${temp} \u00B0F</p>
           <p id="humidity">Humidity: ${humidity}%</p>
           <p id="windSpeed">Wind Speed: ${windSpeed} MPH</p>
@@ -142,8 +143,10 @@ $(document).ready(function() {
       event.preventDefault();
       city = $("#addCity").val().trim();
       if (city === "") {
-        return;
+        alert("Please type the name of the City to know the current weather");
+        // return;
       }
+      console.log(city)
       weatherData(city);
     });
     

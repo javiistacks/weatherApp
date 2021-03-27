@@ -1,5 +1,12 @@
 # weatherApp
 
+[![Generic badge](https://img.shields.io/badge/license-MIT-<COLOR>.svg)](#license)
+![GitHub language count](https://img.shields.io/github/languages/count/javiistacks/weatherApp)
+![GitHub top language](https://img.shields.io/github/languages/top/javiistacks/weatherApp)
+
+
+
+
 <img src="readME/MobileFriendly.gif" width="550" height="400" >
 
 The Website is mobile Friendly. 
